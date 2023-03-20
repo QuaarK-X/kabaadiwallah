@@ -38,59 +38,35 @@ p {
   margin: 15px 0px 20px 0px;
 }
 
-.contain {
-  margin: 0 150px;
-}
-
-header {
+.navbar {
+  background-color: #f6faf5;
+  box-shadow: 0 1px 12px #2c6b34;
+  z-index: 12345;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 20px 80px;
-  margin-bottom: 16px;
-  background-color: #eff0f5;
-  box-shadow: 0px 5px 10px rgb(186, 250, 199);
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 999;
 }
 
-#navbar ul {
-  display: flex;
-  list-style: none;
+nav img {
+  width: 8rem;
+  margin-right: 68rem;
+  margin-left: 1.2rem;
 }
 
-#navbar ul li {
-  font-size: 18px;
-  font-weight: 600;
-  position: relative;
+.nav-link {
+  color: #378441;
+  font-weight: 500;
+  padding-right: 1.1rem;
+  font-size: 16px;
 }
 
-#navbar ul li a {
-  padding: 0px 20px;
-  text-decoration: none;
-  color: #097404;
-  font-weight: lighter;
-  transition: 0.3s ease;
+.nav-link:hover {
+  color: #04440d;
 }
 
-#navbar ul li a.active {
-  color: rgb(61, 116, 128);
-}
-
-#navbar ul li a:hover {
-  color: rgb(36, 101, 54);
-}
-
-#navbar li a.active::after {
-  content: "";
-  width: 40%;
-  height: 2.4px;
-  background: #606766;
-  position: absolute;
-  bottom: -4px;
-  left: 20px;
+#hero {
+  height: 100vh;
+  background-color: #f6faf5;
 }
 
 .herotext {
@@ -103,21 +79,25 @@ span {
   -webkit-background-clip: text;
 }
 
-#hero {
+#heroContent {
   display: flex;
   justify-content: space-around;
-  /* background-color: rgb(240, 240, 240); */
 }
 
-/* How it work cards */
+#heroContent video {
+  margin-top: 13.6rem;
+  border-radius: 1rem;
+}
+
 .howWork {
   margin: 100px 150px;
   text-align: center;
 }
 
-.howWork h2{
-        text-decoration: underline;
-        text-decoration-thickness: 3px;
+.howWork h2 {
+  text-decoration: underline;
+  margin-bottom: 70px;
+  text-decoration-thickness: 3px;
 }
 
 .howWorkFlex {
@@ -145,3 +125,94 @@ span {
 .card p {
   color: white;
 }
+
+/* header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    margin-bottom: 16px;
+    background-color: #f6faf5;
+    box-shadow: 0 1px 12px #2c6b34;    
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 12399;
+}
+
+navbar{
+    background: #f6faf5;
+    box-shadow: 0 1px 12px #2c6b34;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 125252525;
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li{
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+}
+
+#navbar ul li a{
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #097404;
+    font-weight: lighter;
+    transition: 0.3s ease;
+}
+
+#navbar ul li a.active{
+    color: rgb(61, 116, 128);
+}
+
+#navbar ul li a:hover{
+    color: rgb(36, 101, 54);
+}
+
+#navbar li a.active::after{
+    content:"";
+    width: 40%;
+    height:2.4px;
+    background:#606766;
+    position:absolute;
+    bottom:-4px;
+    left:20px;
+}
+
+.herotext{
+    margin-top: 16rem;
+    margin-left: 8rem;
+}
+span{
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg,#0a9b1a 0,#17718c);
+    -webkit-background-clip: text;
+}
+
+#hero{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f6faf5;
+    background-position: bottom;
+    background-repeat: no-repeat,no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat,no-repeat;
+    background-size: cover;
+    height: 100vh
+}
+video{
+    border: none;
+    overflow: hidden;
+    margin-top: 5rem;
+    border-radius: 1rem;
+} */
