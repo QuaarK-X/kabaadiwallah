@@ -60,6 +60,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: sticky;
 }
 
 nav img {
@@ -82,28 +83,88 @@ nav img {
 #hero {
   height: 100vh;
   background-color: #f6faf5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.herotext {
-  margin-top: 16rem;
-}
 
-span {
+#name {
   -webkit-text-fill-color: transparent;
   background: linear-gradient(90deg, #0a9b1a 0, #17718c);
   -webkit-background-clip: text;
 }
 
-#heroContent {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 80px;
+#mob{
+  color: gray;
+  font-size: 1.2rem;
 }
 
-#heroContent video {
-  margin-top: 13.6rem;
+form input{
+  border: 1px solid lightgray;
+}
+
+#book{
+  border: 1px solid lightgray;
+  margin-top: 4rem;
   border-radius: 1rem;
-  box-shadow: 0px 1px 12px #132e17;
+  background-color: #fff;
+  padding: 2rem;
+  height: 42vh;
+  width: 26vw;
+  box-shadow: 0px 1px 12px #24612d;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#book-form #submit{
+  background-color: #0ebc22;
+  border: none;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.2rem;
+  margin-top: 1rem;
+}
+
+#query #call-query{
+  color: #0ebc22;
+  font-weight: 600;
+}
+
+#query{
+  font-size: 16px;
+  color: gray;
+}
+
+.vid{
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vid h3{
+  font-weight: 560;
+}
+
+#sust{
+  color: #0ebc22;
+}
+
+#video{
+  display: flex;
+  justify-content: center;
+}
+
+#vid{
+  border: none;
+  border-radius: 1rem;
+  height: 75vh;
 }
 
 .howWork {
@@ -322,6 +383,7 @@ footer {
   padding: 40px 100px;
   flex-wrap: wrap;
   background-color: #f6faf5;
+  margin-top: 80px;
 }
 
 footer .col {
@@ -387,130 +449,6 @@ footer .col a:hover {
   color: #465352;
   margin: 20px 0px 0px 0px;
 }
-#contact{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding: 20px 100px;
-}
-#contact li{
-  list-style: none;
-  display: flex;
-  padding: 18px 0px;
-}
-#contact i{
-  color: rgb(117, 117, 117);
-  padding-right: 18px;
-}
-#contact p{
-  color: rgb(117, 117, 117);
-  font-size: 18px;
-  margin: 0px;
-}
-#contact h2{
-  font-size: 40px;
-  line-height: 32px;
-  padding: 20px 0px;
-}
-#contact .details{
-  width: 40%;
-}
-#contact .map{
-  width: 50%;
-  height: 420px;
-}
-#contact.map iframe{
-  width: 100%;
-  height: 100%;
-}
-
-#form-details{
-  padding: 20px 80px;
-  margin: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #e1e1e1;
-  border-radius: 8px;
-}
-
-#form-details form{
-  width:65%;
-  display:flex;
-  flex-direction:column;
-  align-items:flex-start;
-}
-
-#form-details form input,
-#form-details form textarea{            
-  width:100%;
-  padding:12px 15px;
-  outline:none;
-  margin-bottom:20px;
-  border: 1px solid #e1e1e1;
-}
-
-#form-details form button{
-  background-color: #088178;
-  color: #fff;
-  width: 100%;
-  height: 32px;
-  border: none;
-  border-radius: 4px;
-  text-align: center;
-}
-
-#form-details form h2{
-  font-size: 40px;
-  padding: 10px 0px;
-}
-
-#form-details .people div{
-  padding-bottom: 28px;
-  display: flex;
-  justify-content: flex-start;
-}
-
-#form-details .people p{
-  color: rgb(122, 122, 122);
-  font-size: 16px;
-  margin: 0px;
-  line-height: 30px;
-}
-
-#form-details .people img{
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  margin-right: 15px;
-}
-
-/* for Contact Page */
-@media (max-width:920px){
-  #contact{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      padding: 20px 80px;
-  }
-  #contact .map{
-      width: 55%;
-  }
-  #contact .map iframe{
-      width: 100%;
-      height: 100%;
-  }
-  #form-details{
-      padding: 20px 40px;
-  }
-  #form-details form{
-      width: 50%;
-  }
-  #form-details .people{
-      padding: 20px;
-  }
-}
-
 
 /* for shop page */
 
@@ -567,31 +505,5 @@ footer .col a:hover {
   }
   .sproduct h2 {
     font-size: 32px;
-  }
-}
-
-/* for Contact Page */
-@media (max-width:920px){
-  #contact{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      padding: 20px 80px;
-  }
-  #contact .map{
-      width: 55%;
-  }
-  #contact .map iframe{
-      width: 100%;
-      height: 100%;
-  }
-  #form-details{
-      padding: 20px 40px;
-  }
-  #form-details form{
-      width: 50%;
-  }
-  #form-details .people{
-      padding: 20px;
   }
 }
