@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>KabaadiWaala</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="home.html"><img src="images/KabaadiWallah.png" width="134px"></a>
+        </div>
+        <nav id="navbar">
+            <ul id="ulnav">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="hero">
+        <h2 class="herotext">
+            Sell your "Kabaad 🗑️"<br>
+            Online with <span>KabaadiWallah</span>
+        </h2>
+        <video src="images/A3JDLY77FL6W9XPO.mp4" autoplay width="500rem"></video>
+    </div>
+</body>
+</html>
