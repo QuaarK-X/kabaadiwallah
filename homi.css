@@ -507,4 +507,72 @@ footer .col a:hover {
     font-size: 32px;
   }
 }
+
+.whyus{
+    
+  align-items: center;
+ padding-left: 8rem;
+ padding-right: 8rem;
+ padding-bottom: 4rem;
+  
+  background-color: #00916e;
+  text-align: center;
+  
+}
+
+.whyusHeading{
+  width: 100%;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 2rem;
+  color: #f6faf5;
+
+
+
+}
+
+.cardsdiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  
+}
+
+.cards{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  /* border: 2px solid black; */
+  margin-right: 1rem;
+  
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  background-color: #f6faf5;
+  box-shadow: 2px 2px 6px #257430;
+  width: 30vw;
+  height: 20vh;
+}
+
+.cardcontent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cardHeading{
+font-weight: 600;
+color: #5b5b5b;
+font-size: 24px;
+
+}
+
+.cardText{
+color: #222;
+
+font-size: 16px;
+font-weight: 400;
+}
                     
